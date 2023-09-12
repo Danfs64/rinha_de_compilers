@@ -1,0 +1,38 @@
+{
+    "name": "@danfs/rinheiro",
+    "type": "module",
+    "version": "0.0.1",
+    "description": "My entry for Rinha of Compilers",
+    "author": "Daniel 'Danfs' Silva",
+    "license": "GPL-3.0",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/Danfs64/rinha_de_compilers.git"
+    },
+    "main": "dist/index.js",
+    "exports": "./dist/index.js",
+    "files": [
+        "./dist"
+    ],
+    "keywords": [],
+    "bugs": "https://github.com/Danfs64/rinha_de_compilers/issues",
+    "scripts": {
+        "build": "tsc -p tsconfig.json && echo 'Build succeeded'",
+        "lint": "eslint src --ext .ts && echo 'Lint succeeded'"
+    },
+    "engines": {
+        "node": ">=19"
+    },
+    "dependencies": {
+        "langium": "^2.0.0"
+    },
+    "devDependencies": {
+        "@types/node": "^20.6.0",
+        "@typescript-eslint/eslint-plugin": "^5.50.0",
+        "eslint": "^8.49.0",
+        "eslint-plugin-eslint-comments": "^3.2.0",
+        "eslint-plugin-functional": "^5.0.0",
+        "eslint-plugin-import": "^2.27.5",
+        "typescript": "^5.2.2"
+    }
+}
