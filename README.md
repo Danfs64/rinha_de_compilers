@@ -17,3 +17,5 @@ Não estou me preocupando inicialmente em fazer a coisa ser eficiente (se efici�
 Depois de tudo, ou quase tudo, feito, eu devo ver qual combinação (interpretado ou transpilado? com ou sem parser?) parece mais promissora em eficiência, e tento polir ela
 
 Linguagem de escolha: TypeScript
+
+Material de referência: Vozes da minha cabeça e o que eu lembrar das aulas de Compiladores do meu grandiosíssimo professor Eduardo Zambon
