@@ -1,0 +1,7 @@
+import fs from "node:fs";
+import { transpile } from "./transpiler.js";
+const file_content = fs.readFileSync("/var/rinha/source.rinha.json", { encoding: "utf-8" });
+const file_json = JSON.parse(file_content);
+// interpretate(file_json)
+transpile(file_json);
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIi4uL3NyYy9tYWluLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBLE9BQU8sRUFBRSxNQUFNLFNBQVMsQ0FBQTtBQUl4QixPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0saUJBQWlCLENBQUM7QUFFNUMsTUFBTSxZQUFZLEdBQUcsRUFBRSxDQUFDLFlBQVksQ0FBQyw4QkFBOEIsRUFBRSxFQUFFLFFBQVEsRUFBRSxPQUFPLEVBQUUsQ0FBQyxDQUFBO0FBQzNGLE1BQU0sU0FBUyxHQUFTLElBQUksQ0FBQyxLQUFLLENBQUMsWUFBWSxDQUFDLENBQUE7QUFDaEQsMEJBQTBCO0FBQzFCLFNBQVMsQ0FBQyxTQUFTLENBQUMsQ0FBQSJ9
