@@ -35,9 +35,10 @@ export function transpile(file: Readonly<File>) : void {
 function transpile_term(term: Readonly<Term>) : string {
     switch(term.kind) {
         case "Int":
-        case "Str":
         case "Bool":
             return `${term.value}`
+        case "Str":
+            return `"${term.value}"`
         case "Tuple":
             return `[${transpile_term(term.first)}, ${transpile_term(term.second)}]`
         case "First":
