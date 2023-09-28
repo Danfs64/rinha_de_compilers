@@ -11,4 +11,5 @@ COPY run.sh .
 
 COPY ./dist ./dist
 
-CMD [ "bash", "./run.sh" ]
+# CMD [ "bash", "./run.sh" ]
+CMD [ "node", "dist/main.js" ]
